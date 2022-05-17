@@ -1,0 +1,24 @@
+mixin speaker__card(speaker__image,badge__1,badge__2,speaker__name,text__example)
+  .col-12.col-md-6.col-lg-4.mb-4 
+    .card 
+      img(src=speaker__image alt="Speaker 1")
+      .card-body 
+        .badges 
+          if badge__1 === "JavaScript"
+            .badge.bg-warning.text-dark.p-2=badge__1
+          if badge__1 === "React"
+            .badge.bg-info.text-dark.p-2=badge__1
+          if badge__1 === "Negocios"
+            .badge.bg-secondary.p-2=badge__1
+          if badge__1 === "Startups"
+            .badge.bg-success.p-2=badge__2
+          if badge__2 === "JavaScript"
+            .badge.bg-warning.text-dark.p-2=badge__2
+          if badge__2 === "React"
+            .badge.bg-info.text-dark.p-2=badge__2
+          if badge__2 === "Negocios"
+            .badge.bg-secondary.p-2=badge__2
+          if badge__2 === "Startups"
+            .badge.bg-success.p-2=badge__2
+        h5.card-title.mt-3=speaker__name
+        p=text__example

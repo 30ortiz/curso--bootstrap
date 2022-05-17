@@ -1,0 +1,16 @@
+<!-- modal -->
+#ticketmodal.modal.fade(tabindex="-1" aria-labelledby="ticketmodallabel" aria-hidden="true")
+  .modal-dialog.modal-dialog-centered
+    .modal-content
+      .modal-header 
+        h5#ticketmodallabel.modal-title Comprar Tickets 
+        button.btn-close(type="button" data-bs-dismiss="modal" tabindex="2" aria-labelledby="ticketmodallabel" aria-hidden="true")
+      .modal-body 
+          .input-group.mb-3 
+            span#basic-addon1.input-group-text @
+            input.form-control( placeholder="Usuario" aria-label="Usuario" aria-describedby="basic-addon1")
+          .alert.alert-warning(role="alert") Recibirás un correo de confirmación si sales sorteado 
+      .modal-footer 
+        button.btn.btn-secondary(type="button" data-bs-dismiss="modal") Cancelar
+        button.btn.btn-platzi(type="button") Comprar
+<!-- modal -->
